@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width: 865px)" href="website3.css">
+    <link rel="stylesheet" media="screen and (max-width: 755px)" href="website3-2.css">
+    <link rel="stylesheet" media="screen and (max-width: 555px)" href="website3-3.css">
+    <link rel="stylesheet" media="screen and (max-width: 455px)" href="website3-4.css">
+    <title>website3</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+
+    }
+
+
+    header {
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+
+    }
+
+    nav {
+        /* overflow: hidden; */
+        /* display: flex; */
+        background-image: url(pexels-engin-akyurt-1435899.jpg);
+        background-position: center;
+        /* height: 120px; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom: 5px solid black;
+    }
+
+    nav ul {
+        overflow: auto;
+    }
+
+    nav li {
+        float: left;
+        /* display: flex; */
+        list-style: none;
+        margin: 19px 20px;
+        position: relative;
+        left: 100px;
+    }
+
+    nav li a {
+        /* padding: 3px 3px; */
+        text-decoration: none;
+        color: rgb(47, 143, 63);
+        font-size: 24px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+
+    nav li a:hover {
+        color: rgb(60, 75, 75)
+    }
+
+    #search {
+        float: right;
+        padding: 5px 5px;
+        margin: 20px 0px 0px 0px;
+        background: none;
+
+    }
+
+    nav input {
+        border: 2px solid black;
+        border-radius: 14px;
+        padding: 4px 4px;
+        width: 150px;
+        /* color: blanchedalmond; */
+    }
+    #search input {
+        color: red;
+
+    }
+
+    #logo img {
+        height: 99px;
+        margin: 0px 6px;
+        position: absolute;
+    }
+
+    #heading {
+        background-image: url(pexels-rene-asmussen-1581384.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* opacity: 0.5; */
+    }
+
+
+    #heading h1 {
+        font-family: 'Sedgwick Ave', cursive;
+        /* display: flex;
+        justify-content: center; */
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 77px;
+        color: rgb(211, 43, 43);
+        text-shadow: 1px 1px white;
+
+    }
+
+    #container {
+        font-family: 'Dancing Script', cursive;
+        /* overflow-x: hidden; */
+    }
+
+    #heading p {
+        font-family: 'Dancing Script', cursive;
+        padding: 44px 0px;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+
+    }
+
+    #container h2 {
+        font-size: 40px;
+
+    }
+
+    #a1,
+    #a3,
+    #a5 {
+        border: 3px transparent black;
+        border-radius: 20px;
+        box-shadow: inset 40px 40px 40px 40px rgba(216, 203, 203, 0.616);
+        position: relative;
+        left: 50%;
+        width: 50%;
+
+    }
+
+    #a2,
+    #a4,
+    #a6 {
+        border: 3px transparent black;
+        border-radius: 20px;
+        box-shadow: inset 40px 40px 40px 40px rgba(216, 203, 203, 0.616);
+        position: relative;
+        width: 50%;
+
+    }
+
+    /*donot use the below given before function;
+                        it only help to change opacity of bg image
+                        and create problem in responsive;
+                        so use an already low opacity image and 
+                        donot use the before function */
+
+    /* #con1::before {
+        content: "";
+        position: absolute;
+        background: url(resbg11.png) no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+
+        z-index: -1;
+    }
+
+    #con2::before {
+        content: "";
+        position: absolute;
+        background: url(resbg2.png) no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+      
+        z-index: -1;
+    }
+
+    #con3::before {
+        content: "";
+        position: absolute;
+        background: url(resbg33.png) no-repeat center center/cover;
+        height: 115%;
+        width: 100%;
+        z-index: -1;
+    } */
+
+
+
+
+    /* #service {
+       
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+        margin: 50px 0px;
+        padding: 20px 0px;
+    } */
+
+    /* #socialmedia {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 3fr;
+        margin: 50px 0px 0px 0px;
+    } */
+
+    #service img {
+        /* transform: scale(0.2); */
+        width: 20%;
+    }
+
+    #socialmedia img {
+        /* transform: scale(0.09); */
+        width: 20%;
+    }
+
+    #service ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* flex-direction: row; */
+        margin: 20px 0px 10px 100px;
+
+    }
+
+    #socialmedia ul {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 3fr;
+        /* flex-direction: row; */
+        margin: 20px 0px 10px 50px;
+
+
+    }
+
+    footer {
+        background-color: rgb(136, 125, 111);
+        /* position: absolute;
+       bottom: 0; */
+    }
+
+    #copyright {
+        text-align: center;
+        background-color: rgb(39, 37, 35);
+        color: white;
+    }
+
+    #order {
+        position: absolute;
+        /* top: 0px; */
+        margin: 75vh 0vh 0vh 1vh;
+        border: 2px solid rgb(11, 109, 16);
+        border-radius: 20px;
+        background-color: rgb(135, 184, 86);
+        font-size: 20px;
+        width: 70px;
+        padding: 0px 0px 0px 6px;
+        animation: anime linear 1s infinite;
+
+
+    }
+
+    @keyframes anime {
+        0% {
+            box-shadow: 0px 0px 0px 0px rgb(57, 212, 77);
+        }
+
+        50% {
+            box-shadow: 0px 0px 30px 10px rgb(57, 212, 77);
+        }
+
+        100% {
+            box-shadow: 0px 0px 0px 0px rgb(57, 212, 77);
+        }
+    }
+
+    #order a {
+        text-decoration: none;
+        color: rgb(11, 109, 16);
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+
+    #order:hover {
+        background-color: rgb(11, 109, 16);
+
+        border: 2px solid rgb(135, 184, 86);
+    }
+
+    #order a:hover {
+        color: rgb(135, 184, 86);
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #container {
+        flex-wrap: wrap;
+        background-image: url(resbg11.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #service p,
+    #socialmedia p {
+        font-size: 16px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+
+    #service ul,
+    #socialmedia ul {
+        overflow: auto;
+    }
+
+    #service li,
+    #socialmedia li {
+        float: left;
+        /* display: flex; */
+        list-style: none;
+        /* margin: 19px 20px; */
+        position: relative;
+        /* left: 100px; */
+    }
+</style>
+
+
+<body>
+
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="food logo2.png" alt="error">
+            </div>
+            <ul>
+                <li><a href="#heading">Home</a></li>
+                <li><a href="#heading">About</a></li>
+                <li><a href="#container">Services</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search for food">
+                </div>
+            </ul>
+
+        </nav>
+
+        <div id="order">
+            <p><a href="https://www.swiggy.com/" target="blank">Order Now</a></p>
+        </div>
+    </header>
+
+    <div id="heading">
+        <h1>Kitchen Resort</h1>
+        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deserunt tenetur nemo fuga ab ea debitis ut
+                cupiditate praesentium nihil, consequatur expedita eos amet maiores facilis repellendus, quisquam velit
+                aliquid! Minus unde accusamus, odio exercitationem totam eligendi vitae facilis impedit aut! Numquam cum
+                est suscipit. Asperiores architecto facilis recusandae vitae consectetur esse, ullam quasi repellat
+                corrupti dicta minus et id laudantium ratione ad mollitia iure optio officiis quidem veritatis impedit
+                maxime dolor ducimus. Dolorum eveniet reiciendis cumque, culpa vel molestias soluta voluptatum corporis
+                earum eligendi ut. Nostrum iste eveniet omnis mollitia nihil libero perspiciatis odit at consequuntur
+                cumque magnam beatae iure, atque dignissimos est ab molestias accusantium. Aperiam dolores consectetur a
+                ut enim, dignissimos aliquam vero! Quam dicta iste minima alias, labore reiciendis sint facilis. Debitis
+                non quae ipsa saepe labore ipsam tempora molestias incidunt. Necessitatibus laborum repellat vitae ab
+                quibusdam laudantium, laboriosam blanditiis eum ex numquam tenetur quod fuga facere labore saepe enim,
+                deleniti illum harum cum reiciendis animi.</b></p>
+    </div>
+
+    <div id="container">
+        <section id="con1">
+
+            <div id="a1">
+                <h2>Meal</h2>
+                <img src="meal.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium quasi beatae voluptas
+                    nobis
+                    eaque commodi corporis culpa nesciunt delectus a laboriosam exercitationem maxime adipisci esse
+                    cumque
+                    facere, et reprehenderit.</p>
+            </div>
+            <div id="a2">
+                <h2>Junk-Food</h2>
+                <img src="pizza2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium quasi beatae voluptas
+                    nobis
+                    eaque commodi corporis culpa nesciunt delectus a laboriosam exercitationem maxime adipisci esse
+                    cumque
+                    facere, et reprehenderit.</p>
+            </div>
+        </section>
+
+        <section id="con2">
+            <div id="a3">
+                <h2>Sea-Food</h2>
+                <img src="seafood.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium quasi beatae voluptas
+                    nobis
+                    eaque commodi corporis culpa nesciunt delectus a laboriosam exercitationem maxime adipisci esse
+                    cumque
+                    facere, et reprehenderit.</p>
+            </div>
+
+
+            <div id="a4">
+                <h2>Non - Veg</h2>
+                <img src="nonveg2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium quasi beatae voluptas
+                    nobis
+                    eaque commodi corporis culpa nesciunt delectus a laboriosam exercitationem maxime adipisci esse
+                    cumque
+                    facere, et reprehenderit.</p>
+            </div>
+        </section>
+
+        <section id="con3">
+            <div id="a5">
+                <h2>Cold - drinks</h2>
+                <img src="coldrink2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium quasi beatae voluptas
+                    nobis
+                    eaque commodi corporis culpa nesciunt delectus a laboriosam exercitationem maxime adipisci esse
+                    cumque
+                    facere, et reprehenderit.</p>
+            </div>
+
+            <div id="a6">
+                <h2>Dessert</h2>
+                <img src="dessert.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laudantium quasi beatae voluptas
+                    nobis
+                    eaque commodi corporis culpa nesciunt delectus a laboriosam exercitationem maxime adipisci esse
+                    cumque
+                    facere, et reprehenderit.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer id="footer">
+
+        <div id="service">
+            <p>Our services are available on:</p>
+            <ul>
+                <li><a href="https://www.swiggy.com/" target="blank"> <img src="Swiggy-Logo-700x394.png"
+                            alt="error"></a></li>
+                <li><a href="https://www.zomato.com/" target="blank"><img src="Zomato-Logo-PNG-HD-Transparent.png"
+                            alt="error"></a></li>
+                <li> <a href="https://www.ubereats.com/" target="blank"><img
+                            src="uber-eats-logo-CA3BA2098B-seeklogo.com.png" alt="error"></a></li>
+            </ul>
+        </div>
+
+
+        <div id="socialmedia">
+            <p>Connect with us on:</p>
+            <ul>
+                <li></li>
+                <li><a href="https://www.facebook.com/" target="blank"><img src="facebook.png" alt="error"></a></li>
+                <li> <a href="https://www.instagram.com/" target="blank"><img src="instagram.png" alt="error"></a></li>
+                <li><a href="https://www.youtube.com/" target="blank"> <img src="youtube.png" alt="error"></a></li>
+                <li><a href="https://www.whatsapp.com/" target="blank"><img src="whatsapp.png" alt="error"></a></li>
+                <li><a href="https://www.twitter.com/" target="blank"><img src="twitter.png" alt="error"></a></li>
+            </ul>
+
+        </div>
+        <div id="copyright">
+            Copyright &copy; kitchenresort.com. All rights reserved!
+        </div>
+
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

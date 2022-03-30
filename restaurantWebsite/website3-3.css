@@ -1,0 +1,25 @@
+header nav li a{
+    /* color: rgb(69, 17, 90); */
+    font-size: 14px;
+}
+header nav #logo{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0px 0px 60px 0px;
+   
+}
+header nav #search {
+    position: relative;
+    width: 24%;
+    margin: 25px 0px 0px 0px ;
+
+}
+nav {
+    height: 120px;
+}
+header #order {
+    margin: 55vh 0vh 0vh 1vh;
+}
+
