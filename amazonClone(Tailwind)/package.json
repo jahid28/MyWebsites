@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "vite"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.23",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "vite": "^2.8.6"
+  }
+}
