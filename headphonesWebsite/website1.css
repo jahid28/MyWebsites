@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+body {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  background: url(headphone\ bg.webp) no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-shadow: 1px 1px rgb(228, 224, 233);
+  overflow-x: hidden;
+  /* flex-wrap: wrap; */
+  /* display: flex; */
+}
+
+nav {
+  background-color: #0d1436;
+  /* flex-direction: column; */
+}
+
+nav ul {
+  overflow: auto;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  margin: 19px 20px;
+  position: relative;
+  left: 200px;
+}
+
+nav li a {
+  padding: 3px 3px;
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
+  color: rgb(75, 209, 226);
+}
+
+.search {
+  float: right;
+  color: white;
+  padding: 12px 75px;
+}
+
+nav input {
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+
+#cbheading {
+  border-bottom: 3px solid rgb(148, 29, 75);
+  color: rgb(6, 49, 65);
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 54px;
+  margin: 1% 30%;
+  /* text-align: center; */
+  z-index: 1;
+}
+
+#box {
+  border: 3px solid rgb(15, 14, 14);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 10px;
+  flex-direction: row;
+  /* box-shadow: 3px 5px  15px rgb(65, 71, 65); */
+  box-shadow: inset 3px 5px 15px 10px rgb(65, 71, 65);
+  /* background-color: rgb(162, 202, 224); */
+  z-index: 1;
+}
+
+#b0,
+#b1,
+#b2,
+#b3,
+#b4,
+#b5,
+#b6,
+#b7,
+#b8,
+#b9,
+#b10,
+#b11,
+#b12,
+#b13,
+#b14,
+#b15,
+#b16,
+#b17,
+#b18,
+#b19,
+#b20,
+#b21,
+#c1,
+table,
+form {
+  color: rgb(0, 0, 0);
+}
+
+#c1 {
+  padding: 25px;
+  position: relative;
+  /* animation-name: anime1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse; */
+  z-index: 1;
+}
+
+/* @keyframes anime1 {
+    0% {
+        left: 0px;
+        color: tomato;
+    }
+
+    20%{
+        color: rgb(7, 72, 158);
+    }
+    40%{
+        color:rgb(187, 184, 36) ;
+    }
+    60%{
+        color: rgb(23, 146, 54);
+    }
+    80%{
+        color: rgb(104, 17, 92);
+    }
+    100% {
+        left: 650px;
+    }
+
+
+} */
+
+#b2,
+#b4,
+#b6,
+#b8,
+#b10,
+#b12,
+#b14,
+#b16,
+#b18,
+#b20 {
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
+  /* right: 40px; */
+  /* padding: 1px 1px 1px 640px; */
+  font-size: 44px;
+  z-index: 1;
+}
+
+table {
+  border: 3px solid rgb(29, 27, 27);
+  margin: 1px 25px;
+  border-radius: 15px;
+  position: relative;
+  animation-name: anime2;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: ease-in-out;
+  /* animation-fill-mode: backwards; */
+  z-index: 1;
+  box-shadow: inset 3px 5px 15px rgb(65, 71, 65);
+  text-shadow: 1px 1px rgb(239, 235, 243);
+}
+
+@keyframes anime2 {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 40%;
+  }
+}
+
+#cblogo {
+  color: rgb(39, 100, 158);
+  text-shadow: 1px 1px rgb(13, 46, 83);
+  background-color: rgb(141, 157, 231);
+  font-size: 100px;
+  border: 1px solid rgb(2, 2, 2);
+  box-shadow: inset 1px 1px 5px 5px rgb(95, 91, 99);
+  padding: 40px;
+  /* margin: 5px 900px; */
+  border-radius: 1000px;
+  position: absolute;
+  left: 1250px;
+  top: 110px;
+  font-family: "Anton", sans-serif;
+  animation-name: anime3;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 0;
+}
+
+@keyframes anime3 {
+  0% {
+    transform: rotate(0deg) scale(1) rotateX(0deg);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.09) rotateX(180deg);
+    color: rgb(78, 32, 44);
+    background-color: rgb(156, 95, 129);
+    text-shadow: 1px 1px rgb(36, 10, 34);
+  }
+  100% {
+    transform: rotate(360deg) scale(1) rotateX(360deg);
+    color: rgb(39, 100, 158);
+    text-shadow: 1px 1px rgb(13, 46, 83);
+    background-color: rgb(141, 157, 231);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(14, 9, 9);
+  /* border: 3px solid rgb(123, 134, 23);
+        background-color: rgb(113, 134, 19); */
+}
+
+#link:hover {
+  color: rgb(106, 107, 40);
+  background-color: rgb(50, 155, 204);
+}
+
+button:hover {
+  display: flex;
+  transform: scale(1.2);
+}
+
+#box img {
+  margin: auto;
+  display: block;
+  width: 234px;
+  z-index: 1;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  /* bottom: 0px; */
+  z-index: 104000;
+}
+
+table th {
+  border-bottom: 3px solid rgb(26, 24, 24);
+}
+
+input {
+  margin: 5px;
+}
+
+form,
+#contact {
+  border: 3px solid rgb(29, 27, 27);
+  border-radius: 15px;
+  /* width: 720px; */
+  box-shadow: inset 3px 5px 15px 10px rgb(65, 71, 65);
+  z-index: 1;
+}
+
+form {
+  /* position: relative;
+    bottom: 200px; */
+  padding: 1px;
+}
+
+#contact {
+  position: absolute;
+  left: 75%;
+  top: 3300px;
+  width: 300px;
+  margin: 10px 0px;
+  padding: 0px 0px 0px 20px;
+  z-index: 101;
+}
+
+#contact a {
+  color: rgb(239, 234, 245);
+}
+
+#contact a:hover {
+  color: rgb(47, 89, 168);
+}
+
+#logo img {
+  height: 49px;
+  margin: 8px 6px;
+  /* border: 2px solid rebeccapurple; */
+  position: absolute;
+  /* top: 0px; */
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 8fr;
+  grid-gap: 1px;
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+/* #a1:first-child,
+#a2:first-child,
+#a3:first-child,
+#a4:first-child,
+#a5:first-child,
+#a6:first-child,
+#a7:first-child,
+#a8:first-child,
+#a9:first-child,
+#a10:first-child{
+    grid-column: 1 / span 4;
+} */
+
+#box:first-child {
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+#i4 {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 79%;
+  margin: 585px 0px 0px 0px;
+  opacity: 0.75;
+}
+
+#i2 {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 79%;
+  margin: 1160px 0px 0px 0px;
+  opacity: 0.85;
+}
+
+#i3 {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  margin: 1735px 0px 0px 0px;
+  opacity: 0.75;
+}
+
+#i1 {
+  z-index: -3;
+  position: absolute;
+  width: 100%;
+  height: 87%;
+  margin: 2310px 0px 0px 0px;
+  opacity: 0.75;
+}
+
+#i5 {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 63%;
+  /* margin: 10px 0px 0px 0px ; */
+  opacity: 0.75;
+}
+
+#i0 {
+  z-index: -99;
+  opacity: 0.8;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 957px;
+}
+
+#inp {
+  width: 60%;
+  /* display: block; */
+}
+
+#copyright {
+  text-align: center;
+}
