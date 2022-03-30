@@ -1,0 +1,942 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#loading {
+  z-index: 10000;
+  width: 20vw;
+  height: 4px;
+  background-color: rgb(142, 250, 53);
+  position: absolute;
+  border-radius: 100px;
+  left: -25%;
+  overflow-x: hidden;
+  /* animation: anime 1s ease-in-out 1; */
+}
+
+@keyframes anime {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+#burgerline1,
+#burgerline2,
+#burgerline3 {
+  transition: all linear 0.3s;
+  width: 40px;
+  height: 4px;
+  margin: 10px 0px 10px 10px;
+  background-color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+}
+.tog {
+  position: absolute;
+}
+
+body {
+  /* background-color: rgb(172, 189, 224); */
+  /* background: url(confetti-g7c6674a26_1920.jpg) no-repeat; */
+  background-size: cover;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 3fr 2fr 1fr;
+}
+
+#logo {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  padding: 4px;
+  width: 55px;
+  margin: 10px 0px 0px 10px;
+}
+
+li {
+  list-style: none;
+  margin: 20px 0px;
+}
+
+#search {
+  /* display: none; */
+  transition: all linear 0.5s;
+  /* width: 350px; */
+  /* opacity: 0; */
+  margin: 20px 0px 0px 0px;
+  position: relative;
+  bottom: 60px;
+  /* animation: anime 1 linear 1s; */
+}
+
+#search.active {
+  position: relative;
+  bottom: 0px;
+  /* display: block; */
+  /* animation: anime 1 linear 1s; */
+  /* width: 22px; */
+  /* opacity: 1; */
+  transition: all linear 0.5s;
+  margin: 20px 0px 0px 0px;
+}
+
+#search input {
+  background:rgb(255 255 255 / 43%);
+  /* width:200px ; */
+  border-radius: 10px;
+  /* color: rgb(255, 255, 255); */
+  /* text-decoration: none; */
+  font-family: "Lobster", cursive;
+  font-size: 19px;
+
+  /* padding: 40px 20px; */
+  /* display: block; */
+
+  /* width: 100px; */
+}
+
+/* @keyframes anime{
+    0%{
+        width: 0px;
+        margin: -20px 0px 0px 0px;
+    }
+    100%{
+        width: 60px;
+        margin: 20px 0px 0px 0px;
+    }
+} */
+
+#searchi {
+  /* border: 2px solid black; */
+  /* position: absolute;
+    float: right; */
+  /* position: relative;
+    left: 90%;
+    bottom: 65px; */
+  width: 30px;
+  cursor: pointer;
+  margin: 20px 0px 0px 0px;
+  /* position: sticky; */
+  /* top: 0; */
+  /* position: relative; */
+  /* right: 10px; */
+
+  /* display: flex;
+  float: right; */
+  /* margin: 0; */
+  /* transition: all linear 1s; */
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  font-size: 35px;
+  margin: 40px 20px;
+
+  /* text-shadow: 1px 1px rgb(66, 61, 61); */
+}
+
+#homepage a {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid black;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid black;
+}
+
+#top {
+  background: url(travel2-3.png) center no-repeat;
+
+  /* opacity: 0.1; */
+  /* position: fixed; */
+  /* filter: blur(5px);
+    z-index: 2; */
+  /* -webkit-filter: blur(5px); */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* #top::before{
+    content: "";
+    background-image: url(travel2.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.25);
+} */
+/* #top img{
+    opacity: 0;
+} */
+
+#heading h1 {
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
+  /* z-index: 10; */
+  color: rgb(36, 27, 21);
+  font-size: 94px;
+  padding: 70px 0px;
+  text-shadow: 2px 2px white;
+}
+
+#heading p {
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+  padding: 20px 30px;
+  text-shadow: 1px 1px white;
+}
+
+#india {
+  border: 10px solid rgb(239, 226, 241);
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 2px rgb(9, 9, 10);
+
+  background: url(taj-mahal-g5db1d862e_1920.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  margin: 0px 200px;
+}
+
+#newyork {
+  border: 10px solid rgb(239, 226, 241);
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 2px rgb(9, 9, 10);
+
+  background: url(usa.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  margin: 0px 200px;
+}
+
+#london {
+  border: 10px solid rgb(239, 226, 241);
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 2px rgb(9, 9, 10);
+
+  background: url(london.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  margin: 0px 200px;
+}
+
+#france {
+  border: 10px solid rgb(239, 226, 241);
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 2px rgb(9, 9, 10);
+
+  background: url(france.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  margin: 0px 200px;
+}
+
+#thailand {
+  border: 10px solid rgb(239, 226, 241);
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 2px rgb(9, 9, 10);
+  background: url(thailand.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  margin: 0px 200px;
+}
+
+#italy {
+  border: 10px solid rgb(239, 226, 241);
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 2px rgb(9, 9, 10);
+
+  background: url(italy.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  margin: 0px 200px;
+}
+
+#japan {
+  border: 10px solid rgb(239, 226, 241);
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 2px rgb(9, 9, 10);
+
+  background: url(japan.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  margin: 0px 200px;
+}
+
+#country h2 {
+  font-size: 44px;
+  text-align: center;
+  padding: 200px 0px 0px 0px;
+  font-family: "Lobster", cursive;
+
+  text-shadow: 2px 2px white;
+}
+
+#country p {
+  text-align: center;
+  margin: 20px;
+  /* width: 50%; */
+}
+
+#country button {
+  position: relative;
+  margin: 20px 0px;
+  left: 15%;
+}
+
+#facility {
+  /* border: 2px solid black;
+    padding: 100px; */
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  position: relative;
+  /* left: 50%; */
+  /* padding: 0px 0px 0px 520px; */
+  /* bottom: 450px; */
+}
+
+/* .hotel{
+    position: absolute;
+   
+
+    
+}
+.food{
+    position: absolute;
+    opacity: 0;
+}
+.guide{
+    position: absolute;
+    opacity: 0;
+}
+.money{
+    position: absolute;
+    opacity: 0;
+} */
+#fac {
+  /* opacity: 0; */
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 50px 0px;
+  margin: 30px 5px;
+  border-radius: 20px;
+}
+/* .food{
+    opacity: 0;
+} */
+/* #fac img{
+    opacity: 0;
+}
+#fac p{
+    opacity: 0;
+} */
+
+#fac:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 0px gray;
+}
+
+#facility img {
+  width: 20%;
+  position: relative;
+  left: 40%;
+}
+
+#facility p {
+  text-align: center;
+}
+
+
+
+#fachead h1 {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  color: rgb(199, 149, 12);
+  font-size: 50px;
+  margin: 50px 0px;
+}
+
+footer {
+  background-color: rgb(99, 102, 105);
+}
+
+footer h2 {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 44px;
+  margin: 20px 0px;
+  padding: 20px 0px;
+}
+
+#eph {
+  margin: 40px 30px;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#social {
+ 
+  display: flex;
+  justify-content: center;
+}
+
+#social img {
+  margin: 3% 1%;
+  width: 30px;
+  cursor: pointer;
+}
+#social img:hover {
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+button {
+  /* text-shadow: 10px 1px rgb(202, 172, 38); */
+  background-color: rgb(234, 157, 241);
+  /* position: relative;
+    left: 55px; */
+  /* text-decoration: dashed; */
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  /* background: transparent; */
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: rgb(245, 209, 245);
+}
+
+#contp {
+  /* display: flex; */
+  /* justify-content: center; */
+  position: relative;
+  left: 23%;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 0px 0px 10px 10px;
+  border-top: transparent;
+  padding: 10px;
+  margin: 0px 10px 30px 10px;
+  /* background-color: rgb(230, 201, 148); */
+  background-color: rgb(239, 226, 241);
+}
+
+#contp p {
+  font-family: "Sansita Swashed", cursive;
+}
+
+#copyr {
+  text-align: center;
+}
+
+.trav {
+  text-align: center;
+  text-shadow: 2px 2px rgb(197, 141, 57);
+  font-size: 64px;
+  font-family: "Sansita Swashed", cursive;
+  margin: 100px 0px 50px 0px;
+  /* transition: all linear 1s; */
+}
+
+#rp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#rp p {
+  /* color: aqua; */
+  font-family: "Sansita Swashed", cursive;
+
+  font-size: 25px;
+}
+
+/* #heart img{
+    width: 25px;
+    position: relative;
+   
+    left: 44%;
+   
+} */
+.heartimg {
+  cursor: pointer;
+  filter: grayscale(1);
+  width: 25px;
+  position: relative;
+  /* bottom: 20%; */
+  top: 2%;
+  left: 90%;
+  background-color: white;
+  padding: 6px;
+  border-radius: 60px;
+  /* transform: rotate(0deg); */
+  transition: all linear 0.3s;
+  /* margin: 0px 0px 200px 0px; */
+  /* color: aqua; */
+  /* background-color: brown; */
+}
+
+.heartimg.active {
+  transform: rotate(360deg);
+  transition: all linear 0.3s;
+  filter: grayscale(0);
+}
+
+#buy {
+  position: sticky;
+  top: 90%;
+  z-index: 2777;
+}
+
+#buy img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px black;
+  cursor: pointer;
+  left: 1%;
+  position: relative;
+  width: 100px;
+}
+
+#up {
+  position: sticky;
+  top: 93%;
+  z-index: 2777;
+  /* border: 2px solid rgb(94, 30, 30);
+  border-radius: 100px; */
+  /* width: 0px; */
+  /* height: 0px; */
+  float: right;
+  padding: 0px;
+  width: 40px;
+  /* margin: 10%; */
+  /* position: relative;
+  left: 90%; */
+}
+
+#up img {
+  /* position: relative; */
+  /* bottom: 80%; */
+  float: right;
+  /* border: 2px solid black; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 0px 10px 0px black; */
+  cursor: pointer;
+  /* left: 96%; */
+  /* right: -1%; */
+  /* position: relative; */
+  /* padding: 0px 5px 0px 0px; */
+  width: 40px;
+}
+
+@media (max-width: 1050px) {
+  #india {
+    height: 500px;
+    margin: 0px 100px;
+  }
+  #newyork {
+    height: 500px;
+    margin: 0px 100px;
+  }
+  #france {
+    height: 500px;
+    margin: 0px 100px;
+  }
+  #london {
+    height: 500px;
+    margin: 0px 100px;
+  }
+  #italy {
+    height: 500px;
+    margin: 0px 100px;
+  }
+  #thailand {
+    height: 500px;
+    margin: 0px 100px;
+  }
+  #japan {
+    height: 500px;
+    margin: 0px 100px;
+  }
+}
+
+@media (max-width: 850px) {
+  #india {
+    height: 400px;
+    margin: 0px 80px;
+  }
+  #newyork {
+    height: 400px;
+    margin: 0px 80px;
+  }
+  #france {
+    height: 400px;
+    margin: 0px 80px;
+  }
+  #london {
+    height: 400px;
+    margin: 0px 80px;
+  }
+  #thailand {
+    height: 400px;
+    margin: 0px 80px;
+  }
+  #italy {
+    height: 400px;
+    margin: 0px 80px;
+  }
+  #japan {
+    height: 400px;
+    margin: 0px 80px;
+  }
+  #contp {
+    /* display: flex;
+    justify-content: center; */
+    /* position: relative; */
+    left: 12.5%;
+    width: 70%;
+    /* border: 2px solid black;
+    border-radius: 0px 0px 10px 10px; */
+    border-top: transparent;
+    padding: 5px;
+    margin: 0px 5px 10px 5px;
+    /* background-color: rgb(230, 201, 148); */
+    /* background-color: rgb(239, 226, 241); */
+  }
+  #search {
+    display: none;
+  }
+  #searchi {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  #burgerline1.active {
+    /* position: absolute; */
+    transform: rotate(45deg);
+    position: relative;
+    top: 14px;
+    transition: all linear 0.3s;
+    z-index: 111;
+  }
+  #burgerline2.active {
+    display: none;
+    z-index: 111;
+  }
+
+  #burgerline3.active {
+    position: relative;
+    /* position: absolute; */
+    transform: rotate(-45deg);
+    transition: all linear 0.3s;
+    z-index: 111;
+  }
+
+  #header {
+    background-color: rgb(94, 104, 104);
+    position: absolute;
+    width: 100vw;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  ul li a {
+    font-size: 22px;
+  }
+
+  #india {
+    border-radius: 0px;
+  }
+  #newyork {
+    border-radius: 0px;
+  }
+  #france {
+    border-radius: 0px;
+  }
+  #london {
+    border-radius: 0px;
+  }
+  #italy {
+    border-radius: 0px;
+  }
+  #thailand {
+    border-radius: 0px;
+  }
+  #japan {
+    border-radius: 0px;
+  }
+  #contp {
+    left: 12.5%;
+    width: 70%;
+    border-top: 2px solid black;
+    padding: 5px;
+    margin: 0px 5px 10px 5px;
+  }
+  .heartimg {
+    width: 20px;
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 60px;
+    transition: all linear 0.3s;
+  }
+
+  #rp p {
+    font-size: 15px;
+  }
+  #heading h1 {
+    font-size: 52px;
+  }
+  #country h2 {
+    font-size: 33px;
+  }
+  #fachead h1 {
+    font-size: 45px;
+  }
+  footer h2 {
+    font-size: 33px;
+  }
+  .trav {
+    font-size: 42px;
+  }
+  #eph {
+    /* text-align: center;
+    margin: 40px 30px;
+    font-size: 20px; */
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #eph p {
+    font-size: 15px;
+  }
+  #buy img {
+    width: 55px;
+  }
+
+  #up {
+    width: 25px;
+  }
+
+  .navbar {
+    transition: all linear 0.3s;
+    /* position: absolute; */
+    height: 0px;
+  }
+
+  .navbar.active {
+    height: 210px;
+    transition: all linear 0.3s;
+  }
+
+  body header nav li {
+    margin: 9px 0px;
+  }
+
+  body header nav li a {
+    padding: 0px;
+  }
+
+  body header nav .ul {
+    transition: all linear 0.3s;
+  }
+
+  body header nav .ul.active {
+    transition: all linear 0.3s;
+  }
+
+  .line {
+    transition: all linear 0.3s;
+    position: relative;
+    bottom: 230px;
+  }
+  .line.active {
+    position: relative;
+    bottom: 0px;
+    transition: all linear 0.3s;
+  }
+
+  #burgerline1,
+  #burgerline2,
+  #burgerline3 {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  /* #logo {
+    position: relative;
+    left: 44%;
+  } */
+  #india {
+    height: 400px;
+    margin: 0px 10px;
+  }
+  #newyork {
+    height: 400px;
+    margin: 0px 10px;
+  }
+  #france {
+    height: 400px;
+    margin: 0px 10px;
+  }
+  #london {
+    height: 400px;
+    margin: 0px 10px;
+  }
+  #thailand {
+    height: 400px;
+    margin: 0px 10px;
+  }
+  #italy {
+    height: 400px;
+    margin: 0px 10px;
+  }
+  #japan {
+    height: 400px;
+    margin: 0px 10px;
+  }
+
+  #heading p {
+    font-size: 10px;
+  }
+  #copyr h4 {
+    font-size: 10px;
+  }
+  #fac p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  #burgerline1,
+  #burgerline2,
+  #burgerline3 {
+    /* transition: all linear .3s; */
+    width: 25px;
+    height: 2.5px;
+    margin: 5px 0px 5px 10px;
+    /* background-color: black; */
+    border-radius: 0px;
+    /* cursor: pointer; */
+    /* display: none; */
+  }
+
+  #burgerline1.active {
+    position: relative;
+    top: 8.5px;
+  }
+
+  #burgerline3.active {
+    position: relative;
+    bottom: 0px;
+  }
+  #logo {
+    width: 40px;
+  }
+
+  #fac {
+    /* opacity: 0; */
+    /* cursor: pointer; */
+    /* border: 2px solid black; */
+    padding: 10px 0px;
+    margin: 15px 5px;
+    border-radius: 20px;
+  }
+  #rp p {
+    font-size: 15px;
+
+    /* display: grid; */
+    /* grid-template-columns: 9fr 8fr 1fr; */
+  }
+  #heading h1 {
+    font-size: 42px;
+  }
+  #country h2 {
+    font-size: 16px;
+  }
+  #fachead h1 {
+    font-size: 35px;
+  }
+  footer h2 {
+    font-size: 23px;
+  }
+  .trav {
+    font-size: 30px;
+  }
+
+  #eph p {
+    font-size: 10px;
+  }
+  #contp p {
+    font-size: 11px;
+  }
+
+  button {
+    display: none;
+  }
+}
+@media (max-width: 250px) {
+  #logo {
+    position: relative;
+    left: 11%;
+  }
+  #heading h1 {
+    font-size: 30px;
+  }
+  #country h2 {
+    font-size: 14px;
+  }
+  #fachead h1 {
+    font-size: 15px;
+  }
+  footer h2 {
+    font-size: 13px;
+  }
+  .trav {
+    font-size: 20px;
+  }
+
+  #eph p {
+    font-size: 10px;
+  }
+  #contp p {
+    font-size: 5px;
+  }
+
+  #rp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 18fr;
+  }
+}
